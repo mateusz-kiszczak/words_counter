@@ -15,6 +15,7 @@ const countWords = str => { // Takes user's input as an argument.
   });
   
   let orderedListElement = document.getElementById('list-of-words');
+  orderedListElement.innerHTML = '';  // Clean all the list items.
 
   checkedSplitedText.forEach(element => { // For each item in the output array 'checkedSplitedText'... 
     let newListItem = document.createElement('li'); // create new 'li' element...
