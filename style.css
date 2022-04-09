@@ -1,0 +1,265 @@
+/* 
+1. Global Styles
+2. Typography
+3. Structure
+4. Modules
+5. Components
+6. Page
+7. Helpers
+*/
+
+
+/* GLOBAL STYLES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* TYPOGRAPHY */
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+dfn {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  display: none;
+  font-size: 1.75rem;
+}
+
+h3,
+dfn {
+  font-size: 1.25rem;
+}
+
+a {
+  text-underline-offset: 0.25rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  font-size: 1rem;
+}
+
+strong {
+  font-weight: normal;
+}
+
+input {
+  font-size: 1.25rem;
+}
+
+button {
+  font-size: 1.125rem;
+}
+
+#output-phrase {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* STRUCTURE */
+
+.outer-section {
+  background-color: hsl(91, 70%, 80%);
+  border-radius: 10px;
+  margin: 32px 0;
+  padding: 16px;
+}
+
+.sub-section {
+  margin: 16px 8px 0 8px;
+}
+
+
+/* MODULES */
+
+#words-counter-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+textarea {
+  background-color: hsl(91, 70%, 95%);
+  border-radius: 5px;
+  height: 150px;
+  margin: 16px 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+#input-button,
+#show-list-button {
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  transition: background-color 200ms, border 200ms, color 200ms;
+}
+
+textarea:focus,
+#input-button:focus,
+#show-list-button:focus {
+  outline: 4px solid darkorange;
+}
+
+#input-button {
+  background-color: hsl(14, 70%, 30%);
+  box-shadow: 2px 2px hsl(14, 70%, 10%);
+  color: hsl(14, 30%, 95%);
+  width: 100%;
+}
+
+#input-button:hover {
+  background-color: hsl(14, 30%, 95%);
+  color: hsl(14, 70%, 30%);
+  border-color: hsl(14, 70%, 30%);
+}
+
+#input-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+#show-list-button {
+  background-color: hsl(91, 70%, 20%);
+  box-shadow: 2px 2px hsl(91, 70%, 10%);
+  color: hsl(91, 30%, 95%);
+  margin: 8px 0;
+}
+
+#show-list-button:hover {
+  background-color: hsl(91, 30%, 95%);
+  color: hsl(91, 70%, 20%);
+}
+
+#show-list-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 400px) {
+  #input-button {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  #show-list-button {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #input-button,
+  #show-list-button {
+    width: 38%;
+  }
+}
+
+/* COMPONENTS */
+
+
+/* PAGE */
+
+body {
+  background-color: hsl(57, 100%, 97%);
+}
+
+main {
+  width: 100%;
+  padding: 32px 16px;
+}
+
+main > div {
+  margin: auto;
+  min-width: 140px;
+  max-width: 736px;
+}
+
+ol,
+ul {
+  list-style-position: inside;
+}
+
+#output-section {
+  background-color: hsl(245, 70%, 80%);
+}
+
+#output-phrase {
+  background-color: hsl(245, 50%, 50%);
+  border-radius: 5px;
+  color: hsl(245, 50%, 95%);
+  letter-spacing: 1px;
+  padding: 1rem;
+}
+
+#counter-output {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#list-header {
+  text-transform: none;
+}
+
+#list-of-words > li {
+  background-color: hsl(245, 70%, 87%);
+  padding-left: 0.5rem;
+}
+
+#list-of-words > li:nth-of-type(even) {
+  background-color: hsl(245, 70%, 90%);
+}
+
+#definition-section li {
+  background-color: hsl(91, 70%, 87%);
+  font-style: italic;
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+#definition-section li:nth-of-type(even) {
+  background-color: hsl(91, 70%, 95%);
+}
+
+#definition-section figcaption {
+  padding: 0.5rem;
+  text-align: right;
+}
+
+
+/* HELPERS */
+
+.hide-list {
+  display: none;
+}
+
+.show-list {
+  display: block;
+}

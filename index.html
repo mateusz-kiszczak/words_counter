@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words counter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Main element - Start -->
+    <main>
+      <!-- Container - Start -->
+      <div>
+        <h1>Words counter</h1>
+
+        <!-- Section - Start -->
+        <section class="outer-section">
+          <h2>Form</h2>
+          <!-- Form - Start -->
+          <form id="words-counter-form">
+            <label for="textInput">Enter the text you want to check:</label>
+            <textarea name="textInput" id="user-text" cols="30" rows="10"></textarea>
+            <input id="input-button" type="submit" value="Count">
+          </form>
+          <!-- Form - End -->
+        </section>
+        <!-- Section - End -->
+
+        <!-- Section - Start -->
+        <section id="output-section" class="outer-section">
+          <h2>Output</h2>
+          <div>
+            <p id="output-phrase"><strong>The above text contains <span id="counter-output">0 words</span>.</strong></p>
+          </div>
+          <!-- Order list section - Start -->
+          <section class="sub-section">
+            <h3 id="list-header">List of words from counter:</h3>
+            <button id="show-list-button">show the words</button>
+            <ol id="list-of-words" class="hide-list"></ol>
+          </section>
+          <!-- Order list section - End -->
+        </section>
+        <!-- Section - End -->
+
+        <!-- Section - Start -->
+        <section id="definition-section" class="outer-section">
+          <h2>Definition</h2>
+          <figure>
+            <blockquote cite="https://dictionary.cambridge.org/dictionary/english/word"><b><dfn>Word</dfn></b></br> a single unit of language that has meaning and can be spoken or written:
+              <ul>
+                <li>Your essay should be no more than two thousand <b>words</b> long.</li>
+                <li>Some <b>words</b> are more difficult to spell than others.</li>
+                <li>What's the <b>word</b> for bikini in French?</li>
+                <li>It's sometimes difficult to find exactly the right <b>word</b> to express what you want to say.</li>
+              </ul>
+            </blockquote>
+            <figcaption>— <a href="https://dictionary.cambridge.org/dictionary/english/word" target="_blank" rel="noopener">Cambridge Dictionary</a></figcaption>
+          </figure>
+        </section>
+        <!-- Section - End -->
+
+      </div>
+      <!-- Container - End -->
+    </main>
+    <!-- Main element - End -->
+
+  </body>
+</html>
