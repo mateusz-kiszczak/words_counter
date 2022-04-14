@@ -2,7 +2,7 @@
 
 Write or paste the text inside the plain area. Click a 'Count' button and watch the result below.
 
-![Words Counter App Screenshot](https://small-projects.s3.eu-west-2.amazonaws.com/words_counter/capture.jpg)
+![Words Counter App Screenshot](https://small-projects.s3.eu-west-2.amazonaws.com/wordsCounter/capture.jpg)
 
 ---
 
@@ -34,7 +34,7 @@ Write or paste the text inside the plain area. Click a 'Count' button and watch 
 
 ## Live example
 
-[Words Counter LIVE](https://small-projects.s3.eu-west-2.amazonaws.com/words_counter/index.html)
+[Words Counter LIVE](https://small-projects.s3.eu-west-2.amazonaws.com/wordsCounter/index.html)
 
 ---
 
